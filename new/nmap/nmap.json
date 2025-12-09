@@ -1,0 +1,86 @@
+[
+{
+  "namespace": "amcop-system",
+  "fqdn": "aes-frontend.amcop-system.svc.cluster.local",
+  "port": 80,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "auth-gateway.amcop-system.svc.cluster.local",
+  "port": 5000,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "compute-controller-service.amcop-system.svc.cluster.local",
+  "port": 80,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "discovery-service.amcop-system.svc.cluster.local",
+  "port": 9308,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "gpuaas-network-controller-manager-metrics-service.amcop-system.svc.cluster.local",
+  "port": 8443,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "gpuaas-network-controller-message-agent.amcop-system.svc.cluster.local",
+  "port": 9073,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "infiniband-controller-controller-manager-metrics-service.amcop-system.svc.cluster.local",
+  "port": 8443,
+  "accepted_ciphers": [],
+  "weak_ciphers": [],
+  "safe_ciphers": []
+}
+,
+{
+  "namespace": "amcop-system",
+  "fqdn": "ingress-ingress-nginx-controller.amcop-system.svc.cluster.local",
+  "port": 443,
+  "accepted_ciphers": [
+    "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A",
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A",
+    "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A"
+  ],
+  "weak_ciphers": [],
+  "safe_ciphers": [
+    "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A",
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A",
+    "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A",
+    "TLS_AKE_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A"
+  ]
+}

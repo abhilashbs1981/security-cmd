@@ -1,0 +1,848 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:bcce5340-d559-4418-92ca-5cfa901dfd8b",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-12-05T08:08:02+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.68.1"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14",
+      "type": "platform",
+      "name": "k8s.io/kubernetes",
+      "version": "v1.31.14",
+      "purl": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kubernetes"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "cluster"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "006abc04-5e7b-413d-adda-e7c96b66d035",
+      "type": "container",
+      "name": "registry.k8s.io/coredns/coredns",
+      "version": "sha256:9caabbf6238b189a65d0d6e6ac138de60d6a1c419e5a341fbbb7c78382559c6e",
+      "purl": "pkg:oci/coredns@sha256%3A9caabbf6238b189a65d0d6e6ac138de60d6a1c419e5a341fbbb7c78382559c6e?repository_url=registry.k8s.io%2Fcoredns%2Fcoredns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/coredns/coredns:v1.11.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4bcbdfe0-271a-4b2e-b262-af6fa96e7fa7",
+      "type": "container",
+      "name": "registry.k8s.io/coredns/coredns",
+      "version": "sha256:9caabbf6238b189a65d0d6e6ac138de60d6a1c419e5a341fbbb7c78382559c6e",
+      "purl": "pkg:oci/coredns@sha256%3A9caabbf6238b189a65d0d6e6ac138de60d6a1c419e5a341fbbb7c78382559c6e?repository_url=registry.k8s.io%2Fcoredns%2Fcoredns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/coredns/coredns:v1.11.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "75b14c01-06a7-43d7-b937-568c29f8c628",
+      "type": "application",
+      "name": "kube-dns",
+      "purl": "pkg:k8s/kube-dns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "coredns-7c65d6cfc9-dzh22"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "86ff887f-9bb3-4fb3-b8d0-753a0630991b",
+      "type": "platform",
+      "name": "cms-abhi-longhorn-24",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "aquasecurity:trivy:HostName",
+          "value": "cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:KernelVersion",
+          "value": "6.8.0-88-generic"
+        },
+        {
+          "name": "aquasecurity:trivy:NodeRole",
+          "value": "master"
+        },
+        {
+          "name": "aquasecurity:trivy:OperatingSystem",
+          "value": "linux"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c779a050-2f7d-4468-8c5f-d036710a1126",
+      "type": "application",
+      "name": "kube-dns",
+      "purl": "pkg:k8s/kube-dns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "coredns-7c65d6cfc9-fgw5q"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "e7d94875-c0e0-4f63-a39f-47edcce39f29",
+      "type": "application",
+      "name": "node-core-components",
+      "properties": []
+    },
+    {
+      "bom-ref": "feff9b4d-4b65-4aa8-bc72-b6d34475e0ba",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "24.04.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+      "type": "application",
+      "name": "github.com/containerd/containerd",
+      "version": "v1.7.28",
+      "purl": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "github.com/containerd/containerd"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/cert-manager@v1.19.1",
+      "type": "application",
+      "name": "cert-manager",
+      "version": "v1.19.1",
+      "purl": "pkg:k8s/cert-manager@v1.19.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "cert-manager-7dfcddcdd5-kq8h2"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controller"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/cilium-agent@v1.18.4",
+      "type": "application",
+      "name": "cilium-agent",
+      "version": "v1.18.4",
+      "purl": "pkg:k8s/cilium-agent@v1.18.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "cilium-zsfj8"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+      "type": "application",
+      "name": "cilium-envoy",
+      "version": "v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+      "purl": "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "cilium-envoy-cbb4m"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/cluster-api-operator@v0.20.0",
+      "type": "application",
+      "name": "cluster-api-operator",
+      "version": "v0.20.0",
+      "purl": "pkg:k8s/cluster-api-operator@v0.20.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "capi-operator-cluster-api-operator-59d69ff549-wbsd2"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controller"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/controller@v0.15.2",
+      "type": "application",
+      "name": "controller",
+      "version": "v0.15.2",
+      "purl": "pkg:k8s/controller@v0.15.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "controller-78fb49f59-mdrkl"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0",
+      "type": "application",
+      "name": "go.etcd.io/etcd/v3",
+      "version": "v3.5.15-0",
+      "purl": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "etcd-cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+      "type": "application",
+      "name": "k8s.io/apiserver",
+      "version": "v1.31.14",
+      "purl": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-apiserver-cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14",
+      "type": "application",
+      "name": "k8s.io/controller-manager",
+      "version": "v1.31.14",
+      "purl": "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-controller-manager-cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+      "type": "application",
+      "name": "k8s.io/ingress-nginx",
+      "version": "v1.8.1",
+      "purl": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "ingress-ingress-nginx-controller-84c9594f78-4bt9c"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controller"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14",
+      "type": "application",
+      "name": "k8s.io/kube-proxy",
+      "version": "v1.31.14",
+      "purl": "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-proxy-72d46"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14",
+      "type": "application",
+      "name": "k8s.io/kube-scheduler",
+      "version": "v1.31.14",
+      "purl": "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-scheduler-cms-abhi-longhorn-24"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkubelet@v1.31.13",
+      "type": "application",
+      "name": "k8s.io/kubelet",
+      "version": "v1.31.13",
+      "purl": "pkg:k8s/k8s.io%2Fkubelet@v1.31.13",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "k8s.io/kubelet"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/opentelemetry-collector",
+      "type": "application",
+      "name": "opentelemetry-collector",
+      "purl": "pkg:k8s/opentelemetry-collector",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "opentelemetry-collector-7858fb7b67-t9rzr"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/speaker@v0.15.2",
+      "type": "application",
+      "name": "speaker",
+      "version": "v0.15.2",
+      "purl": "pkg:k8s/speaker@v0.15.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "speaker-7brf8"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/vault",
+      "type": "application",
+      "name": "vault",
+      "purl": "pkg:k8s/vault",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "vault-0"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/vault-agent-injector",
+      "type": "application",
+      "name": "vault-agent-injector",
+      "purl": "pkg:k8s/vault-agent-injector",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "vault-agent-injector-78658b7d5b-h8522"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/cert-manager-controller@sha256%3Acd49e769e18ada1fd7b9a9bacc87c90db24c65cbfd4bf71694dda7ed40e91187?repository_url=quay.io%2Fjetstack%2Fcert-manager-controller",
+      "type": "container",
+      "name": "quay.io/jetstack/cert-manager-controller",
+      "version": "sha256:cd49e769e18ada1fd7b9a9bacc87c90db24c65cbfd4bf71694dda7ed40e91187",
+      "purl": "pkg:oci/cert-manager-controller@sha256%3Acd49e769e18ada1fd7b9a9bacc87c90db24c65cbfd4bf71694dda7ed40e91187?repository_url=quay.io%2Fjetstack%2Fcert-manager-controller",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "quay.io/jetstack/cert-manager-controller:v1.19.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/cilium-envoy@sha256%3A1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5?repository_url=quay.io%2Fcilium%2Fcilium-envoy",
+      "type": "container",
+      "name": "quay.io/cilium/cilium-envoy",
+      "version": "sha256:1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5",
+      "purl": "pkg:oci/cilium-envoy@sha256%3A1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5?repository_url=quay.io%2Fcilium%2Fcilium-envoy",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "quay.io/cilium/cilium-envoy:v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/cilium@sha256%3A49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f?repository_url=quay.io%2Fcilium%2Fcilium",
+      "type": "container",
+      "name": "quay.io/cilium/cilium",
+      "version": "sha256:49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f",
+      "purl": "pkg:oci/cilium@sha256%3A49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f?repository_url=quay.io%2Fcilium%2Fcilium",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "quay.io/cilium/cilium:v1.18.4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/cluster-api-operator@sha256%3A7f7bdd5cdf556a9d9d4e1fe89aa08bca38219a0708333a6d81176449bbb3f57a?repository_url=registry.k8s.io%2Fcapi-operator%2Fcluster-api-operator",
+      "type": "container",
+      "name": "registry.k8s.io/capi-operator/cluster-api-operator",
+      "version": "sha256:7f7bdd5cdf556a9d9d4e1fe89aa08bca38219a0708333a6d81176449bbb3f57a",
+      "purl": "pkg:oci/cluster-api-operator@sha256%3A7f7bdd5cdf556a9d9d4e1fe89aa08bca38219a0708333a6d81176449bbb3f57a?repository_url=registry.k8s.io%2Fcapi-operator%2Fcluster-api-operator",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/capi-operator/cluster-api-operator:v0.20.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/controller@sha256%3A417cdb6d6f9f2c410cceb84047d3a4da3bfb78b5ddfa30f4cf35ea5c667e8c2e?repository_url=quay.io%2Fmetallb%2Fcontroller",
+      "type": "container",
+      "name": "quay.io/metallb/controller",
+      "version": "sha256:417cdb6d6f9f2c410cceb84047d3a4da3bfb78b5ddfa30f4cf35ea5c667e8c2e",
+      "purl": "pkg:oci/controller@sha256%3A417cdb6d6f9f2c410cceb84047d3a4da3bfb78b5ddfa30f4cf35ea5c667e8c2e?repository_url=quay.io%2Fmetallb%2Fcontroller",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "quay.io/metallb/controller:v0.15.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/controller@sha256%3Ae5c4824e7375fcf2a393e1c03c293b69759af37a9ca6abdb91b13d78a93da8bd?repository_url=registry.k8s.io%2Fingress-nginx%2Fcontroller",
+      "type": "container",
+      "name": "registry.k8s.io/ingress-nginx/controller",
+      "version": "sha256:e5c4824e7375fcf2a393e1c03c293b69759af37a9ca6abdb91b13d78a93da8bd",
+      "purl": "pkg:oci/controller@sha256%3Ae5c4824e7375fcf2a393e1c03c293b69759af37a9ca6abdb91b13d78a93da8bd?repository_url=registry.k8s.io%2Fingress-nginx%2Fcontroller",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/ingress-nginx/controller:v1.8.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/etcd@sha256%3Aa6dc63e6e8cfa0307d7851762fa6b629afb18f28d8aa3fab5a6e91b4af60026a?repository_url=registry.k8s.io%2Fetcd",
+      "type": "container",
+      "name": "registry.k8s.io/etcd",
+      "version": "sha256:a6dc63e6e8cfa0307d7851762fa6b629afb18f28d8aa3fab5a6e91b4af60026a",
+      "purl": "pkg:oci/etcd@sha256%3Aa6dc63e6e8cfa0307d7851762fa6b629afb18f28d8aa3fab5a6e91b4af60026a?repository_url=registry.k8s.io%2Fetcd",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/etcd:v3.5.15-0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-apiserver@sha256%3A4dad587106d2e96fe12987e525e1d73aeb7fa96c6b84104b259404a18688c5f8?repository_url=registry.k8s.io%2Fkube-apiserver",
+      "type": "container",
+      "name": "registry.k8s.io/kube-apiserver",
+      "version": "sha256:4dad587106d2e96fe12987e525e1d73aeb7fa96c6b84104b259404a18688c5f8",
+      "purl": "pkg:oci/kube-apiserver@sha256%3A4dad587106d2e96fe12987e525e1d73aeb7fa96c6b84104b259404a18688c5f8?repository_url=registry.k8s.io%2Fkube-apiserver",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/kube-apiserver:v1.31.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-controller-manager@sha256%3A3d50471f4d88ebe2ed5961d0e04afcac5d2c0b7bbf114c550667c3341d9838aa?repository_url=registry.k8s.io%2Fkube-controller-manager",
+      "type": "container",
+      "name": "registry.k8s.io/kube-controller-manager",
+      "version": "sha256:3d50471f4d88ebe2ed5961d0e04afcac5d2c0b7bbf114c550667c3341d9838aa",
+      "purl": "pkg:oci/kube-controller-manager@sha256%3A3d50471f4d88ebe2ed5961d0e04afcac5d2c0b7bbf114c550667c3341d9838aa?repository_url=registry.k8s.io%2Fkube-controller-manager",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/kube-controller-manager:v1.31.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-proxy@sha256%3Af5f3e526c5f433817fefd0acfe1d602d87af0692358e9d55e4ff9f70f440f018?repository_url=registry.k8s.io%2Fkube-proxy",
+      "type": "container",
+      "name": "registry.k8s.io/kube-proxy",
+      "version": "sha256:f5f3e526c5f433817fefd0acfe1d602d87af0692358e9d55e4ff9f70f440f018",
+      "purl": "pkg:oci/kube-proxy@sha256%3Af5f3e526c5f433817fefd0acfe1d602d87af0692358e9d55e4ff9f70f440f018?repository_url=registry.k8s.io%2Fkube-proxy",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/kube-proxy:v1.31.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-scheduler@sha256%3A0a722e448e65bd6015b51d5fe28a445e6fdc6d539ff7b72e2612549852a60390?repository_url=registry.k8s.io%2Fkube-scheduler",
+      "type": "container",
+      "name": "registry.k8s.io/kube-scheduler",
+      "version": "sha256:0a722e448e65bd6015b51d5fe28a445e6fdc6d539ff7b72e2612549852a60390",
+      "purl": "pkg:oci/kube-scheduler@sha256%3A0a722e448e65bd6015b51d5fe28a445e6fdc6d539ff7b72e2612549852a60390?repository_url=registry.k8s.io%2Fkube-scheduler",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "registry.k8s.io/kube-scheduler:v1.31.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/opentelemetry-collector-contrib@sha256%3Ae94cfd92357aa21f4101dda3c0c01f90e6f24115ba91b263c4d09fed7911ae68?repository_url=index.docker.io%2Fotel%2Fopentelemetry-collector-contrib",
+      "type": "container",
+      "name": "index.docker.io/otel/opentelemetry-collector-contrib",
+      "version": "sha256:e94cfd92357aa21f4101dda3c0c01f90e6f24115ba91b263c4d09fed7911ae68",
+      "purl": "pkg:oci/opentelemetry-collector-contrib@sha256%3Ae94cfd92357aa21f4101dda3c0c01f90e6f24115ba91b263c4d09fed7911ae68?repository_url=index.docker.io%2Fotel%2Fopentelemetry-collector-contrib",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "index.docker.io/otel/opentelemetry-collector-contrib:v0.127.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/speaker@sha256%3A260c9406f957c0830d4e6cd2e9ac8c05e51ac959dd2462c4c2269ac43076665a?repository_url=quay.io%2Fmetallb%2Fspeaker",
+      "type": "container",
+      "name": "quay.io/metallb/speaker",
+      "version": "sha256:260c9406f957c0830d4e6cd2e9ac8c05e51ac959dd2462c4c2269ac43076665a",
+      "purl": "pkg:oci/speaker@sha256%3A260c9406f957c0830d4e6cd2e9ac8c05e51ac959dd2462c4c2269ac43076665a?repository_url=quay.io%2Fmetallb%2Fspeaker",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "quay.io/metallb/speaker:v0.15.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/vault-k8s@sha256%3A8c18ccc87fd72930fd0c3f12ea444e9e57e83f119b93c546ed047aba29a05c5f?repository_url=index.docker.io%2Fhashicorp%2Fvault-k8s",
+      "type": "container",
+      "name": "index.docker.io/hashicorp/vault-k8s",
+      "version": "sha256:8c18ccc87fd72930fd0c3f12ea444e9e57e83f119b93c546ed047aba29a05c5f",
+      "purl": "pkg:oci/vault-k8s@sha256%3A8c18ccc87fd72930fd0c3f12ea444e9e57e83f119b93c546ed047aba29a05c5f?repository_url=index.docker.io%2Fhashicorp%2Fvault-k8s",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "index.docker.io/hashicorp/vault-k8s:v1.7.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/vault@sha256%3A268bb80aa9c6d13d65fcfa05c0c268caca068952240a8087291a6ce0b66e3a10?repository_url=index.docker.io%2Fhashicorp%2Fvault",
+      "type": "container",
+      "name": "index.docker.io/hashicorp/vault",
+      "version": "sha256:268bb80aa9c6d13d65fcfa05c0c268caca068952240a8087291a6ce0b66e3a10",
+      "purl": "pkg:oci/vault@sha256%3A268bb80aa9c6d13d65fcfa05c0c268caca068952240a8087291a6ce0b66e3a10?repository_url=index.docker.io%2Fhashicorp%2Fvault",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "index.docker.io/hashicorp/vault:v1.20.4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "75b14c01-06a7-43d7-b937-568c29f8c628",
+      "dependsOn": [
+        "4bcbdfe0-271a-4b2e-b262-af6fa96e7fa7"
+      ]
+    },
+    {
+      "ref": "86ff887f-9bb3-4fb3-b8d0-753a0630991b",
+      "dependsOn": [
+        "e7d94875-c0e0-4f63-a39f-47edcce39f29",
+        "feff9b4d-4b65-4aa8-bc72-b6d34475e0ba"
+      ]
+    },
+    {
+      "ref": "c779a050-2f7d-4468-8c5f-d036710a1126",
+      "dependsOn": [
+        "006abc04-5e7b-413d-adda-e7c96b66d035"
+      ]
+    },
+    {
+      "ref": "e7d94875-c0e0-4f63-a39f-47edcce39f29",
+      "dependsOn": [
+        "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+        "pkg:k8s/k8s.io%2Fkubelet@v1.31.13"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/cert-manager@v1.19.1",
+      "dependsOn": [
+        "pkg:oci/cert-manager-controller@sha256%3Acd49e769e18ada1fd7b9a9bacc87c90db24c65cbfd4bf71694dda7ed40e91187?repository_url=quay.io%2Fjetstack%2Fcert-manager-controller"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/cilium-agent@v1.18.4",
+      "dependsOn": [
+        "pkg:oci/cilium@sha256%3A49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f?repository_url=quay.io%2Fcilium%2Fcilium"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+      "dependsOn": [
+        "pkg:oci/cilium-envoy@sha256%3A1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5?repository_url=quay.io%2Fcilium%2Fcilium-envoy"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/cluster-api-operator@v0.20.0",
+      "dependsOn": [
+        "pkg:oci/cluster-api-operator@sha256%3A7f7bdd5cdf556a9d9d4e1fe89aa08bca38219a0708333a6d81176449bbb3f57a?repository_url=registry.k8s.io%2Fcapi-operator%2Fcluster-api-operator"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/controller@v0.15.2",
+      "dependsOn": [
+        "pkg:oci/controller@sha256%3A417cdb6d6f9f2c410cceb84047d3a4da3bfb78b5ddfa30f4cf35ea5c667e8c2e?repository_url=quay.io%2Fmetallb%2Fcontroller"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0",
+      "dependsOn": [
+        "pkg:oci/etcd@sha256%3Aa6dc63e6e8cfa0307d7851762fa6b629afb18f28d8aa3fab5a6e91b4af60026a?repository_url=registry.k8s.io%2Fetcd"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+      "dependsOn": [
+        "pkg:oci/kube-apiserver@sha256%3A4dad587106d2e96fe12987e525e1d73aeb7fa96c6b84104b259404a18688c5f8?repository_url=registry.k8s.io%2Fkube-apiserver"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14",
+      "dependsOn": [
+        "pkg:oci/kube-controller-manager@sha256%3A3d50471f4d88ebe2ed5961d0e04afcac5d2c0b7bbf114c550667c3341d9838aa?repository_url=registry.k8s.io%2Fkube-controller-manager"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+      "dependsOn": [
+        "pkg:oci/controller@sha256%3Ae5c4824e7375fcf2a393e1c03c293b69759af37a9ca6abdb91b13d78a93da8bd?repository_url=registry.k8s.io%2Fingress-nginx%2Fcontroller"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14",
+      "dependsOn": [
+        "pkg:oci/kube-proxy@sha256%3Af5f3e526c5f433817fefd0acfe1d602d87af0692358e9d55e4ff9f70f440f018?repository_url=registry.k8s.io%2Fkube-proxy"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14",
+      "dependsOn": [
+        "pkg:oci/kube-scheduler@sha256%3A0a722e448e65bd6015b51d5fe28a445e6fdc6d539ff7b72e2612549852a60390?repository_url=registry.k8s.io%2Fkube-scheduler"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14",
+      "dependsOn": [
+        "75b14c01-06a7-43d7-b937-568c29f8c628",
+        "86ff887f-9bb3-4fb3-b8d0-753a0630991b",
+        "c779a050-2f7d-4468-8c5f-d036710a1126",
+        "pkg:k8s/cert-manager@v1.19.1",
+        "pkg:k8s/cilium-agent@v1.18.4",
+        "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+        "pkg:k8s/cluster-api-operator@v0.20.0",
+        "pkg:k8s/controller@v0.15.2",
+        "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0",
+        "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+        "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14",
+        "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+        "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14",
+        "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14",
+        "pkg:k8s/opentelemetry-collector",
+        "pkg:k8s/speaker@v0.15.2",
+        "pkg:k8s/vault",
+        "pkg:k8s/vault-agent-injector"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/opentelemetry-collector",
+      "dependsOn": [
+        "pkg:oci/opentelemetry-collector-contrib@sha256%3Ae94cfd92357aa21f4101dda3c0c01f90e6f24115ba91b263c4d09fed7911ae68?repository_url=index.docker.io%2Fotel%2Fopentelemetry-collector-contrib"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/speaker@v0.15.2",
+      "dependsOn": [
+        "pkg:oci/speaker@sha256%3A260c9406f957c0830d4e6cd2e9ac8c05e51ac959dd2462c4c2269ac43076665a?repository_url=quay.io%2Fmetallb%2Fspeaker"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/vault",
+      "dependsOn": [
+        "pkg:oci/vault@sha256%3A268bb80aa9c6d13d65fcfa05c0c268caca068952240a8087291a6ce0b66e3a10?repository_url=index.docker.io%2Fhashicorp%2Fvault"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/vault-agent-injector",
+      "dependsOn": [
+        "pkg:oci/vault-k8s@sha256%3A8c18ccc87fd72930fd0c3f12ea444e9e57e83f119b93c546ed047aba29a05c5f?repository_url=index.docker.io%2Fhashicorp%2Fvault-k8s"
+      ]
+    }
+  ],
+  "vulnerabilities": []
+}

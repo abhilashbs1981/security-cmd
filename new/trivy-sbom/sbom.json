@@ -1,0 +1,1013 @@
+{
+  "SchemaVersion": 2,
+  "ReportID": "019afd4e-437d-74e0-8fa1-282408b680cc",
+  "CreatedAt": "2025-12-08T09:32:36.093321321Z",
+  "ArtifactName": "kbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "24.04.3"
+    }
+  },
+  "Results": [
+    {
+      "Target": "kbom.json (ubuntu 24.04.3)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu"
+    },
+    {
+      "Target": "",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Packages": [
+        {
+          "ID": "github.com/containerd/containerd@v1.7.28",
+          "Name": "github.com/containerd/containerd",
+          "Identifier": {
+            "PURL": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+            "UID": "47cb76242bcea87b",
+            "BOMRef": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28"
+          },
+          "Version": "v1.7.28"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-25621",
+          "PkgID": "github.com/containerd/containerd@v1.7.28",
+          "PkgName": "github.com/containerd/containerd",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+            "UID": "47cb76242bcea87b",
+            "BOMRef": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28"
+          },
+          "InstalledVersion": "v1.7.28",
+          "FixedVersion": "1.7.29",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25621",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:a2214bd7d7c854d3fd2d105617302e6a3f068919739fd96f14998e78b9cd79bc",
+          "Title": "github.com/containerd/containerd: containerd local privilege escalation",
+          "Description": "containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-279"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "photon": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-25621",
+            "https://github.com/containerd/containerd",
+            "https://github.com/containerd/containerd/blob/main/docs/rootless.md",
+            "https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25621",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25621"
+          ],
+          "PublishedDate": "2025-11-06T19:15:40.09Z",
+          "LastModifiedDate": "2025-11-06T19:45:09.883Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-64329",
+          "PkgID": "github.com/containerd/containerd@v1.7.28",
+          "PkgName": "github.com/containerd/containerd",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28",
+            "UID": "47cb76242bcea87b",
+            "BOMRef": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@v1.7.28"
+          },
+          "InstalledVersion": "v1.7.28",
+          "FixedVersion": "1.7.29",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-64329",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:4e084161064ec0fe8b4863aae76ae82bd2ee7c07e75e6484815ffe04ff83b43d",
+          "Title": "containerd is an open-source container runtime. Versions 1.7.28 and be ...",
+          "Description": "containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-401"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 2,
+            "photon": 2
+          },
+          "References": [
+            "https://github.com/containerd/containerd",
+            "https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-64329"
+          ],
+          "PublishedDate": "2025-11-07T05:16:08.017Z",
+          "LastModifiedDate": "2025-11-12T16:20:22.257Z"
+        }
+      ]
+    },
+    {
+      "Target": "Kubernetes",
+      "Class": "lang-pkgs",
+      "Type": "kubernetes",
+      "Packages": [
+        {
+          "ID": "cert-manager@v1.19.1",
+          "Name": "cert-manager",
+          "Identifier": {
+            "PURL": "pkg:k8s/cert-manager@v1.19.1",
+            "UID": "23bb76e17cc06870",
+            "BOMRef": "pkg:k8s/cert-manager@v1.19.1"
+          },
+          "Version": "v1.19.1"
+        },
+        {
+          "ID": "cilium-agent@v1.18.4",
+          "Name": "cilium-agent",
+          "Identifier": {
+            "PURL": "pkg:k8s/cilium-agent@v1.18.4",
+            "UID": "490aa5bdcbc068a1",
+            "BOMRef": "pkg:k8s/cilium-agent@v1.18.4"
+          },
+          "Version": "v1.18.4"
+        },
+        {
+          "ID": "cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+          "Name": "cilium-envoy",
+          "Identifier": {
+            "PURL": "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+            "UID": "282f49d75d845a3d",
+            "BOMRef": "pkg:k8s/cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5"
+          },
+          "Version": "v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5"
+        },
+        {
+          "ID": "cluster-api-operator@v0.20.0",
+          "Name": "cluster-api-operator",
+          "Identifier": {
+            "PURL": "pkg:k8s/cluster-api-operator@v0.20.0",
+            "UID": "73ad226e4bf4ea74",
+            "BOMRef": "pkg:k8s/cluster-api-operator@v0.20.0"
+          },
+          "Version": "v0.20.0"
+        },
+        {
+          "ID": "controller@v0.15.2",
+          "Name": "controller",
+          "Identifier": {
+            "PURL": "pkg:k8s/controller@v0.15.2",
+            "UID": "bc643ffa6fd1645c",
+            "BOMRef": "pkg:k8s/controller@v0.15.2"
+          },
+          "Version": "v0.15.2"
+        },
+        {
+          "ID": "go.etcd.io/etcd/v3@v3.5.15-0",
+          "Name": "go.etcd.io/etcd/v3",
+          "Identifier": {
+            "PURL": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0",
+            "UID": "673c3377eb251cce",
+            "BOMRef": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@v3.5.15-0"
+          },
+          "Version": "v3.5.15-0"
+        },
+        {
+          "ID": "k8s.io/apiserver@v1.31.14",
+          "Name": "k8s.io/apiserver",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+            "UID": "c769adce0cd7a4ad",
+            "BOMRef": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14"
+          },
+          "Version": "v1.31.14"
+        },
+        {
+          "ID": "k8s.io/controller-manager@v1.31.14",
+          "Name": "k8s.io/controller-manager",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14",
+            "UID": "b9f260a10e38a343",
+            "BOMRef": "pkg:k8s/k8s.io%2Fcontroller-manager@v1.31.14"
+          },
+          "Version": "v1.31.14"
+        },
+        {
+          "ID": "k8s.io/ingress-nginx@v1.8.1",
+          "Name": "k8s.io/ingress-nginx",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "Version": "v1.8.1"
+        },
+        {
+          "ID": "k8s.io/kube-proxy@v1.31.14",
+          "Name": "k8s.io/kube-proxy",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14",
+            "UID": "4d2848db7478fd4a",
+            "BOMRef": "pkg:k8s/k8s.io%2Fkube-proxy@v1.31.14"
+          },
+          "Version": "v1.31.14"
+        },
+        {
+          "ID": "k8s.io/kube-scheduler@v1.31.14",
+          "Name": "k8s.io/kube-scheduler",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14",
+            "UID": "90a3594b6b38deba",
+            "BOMRef": "pkg:k8s/k8s.io%2Fkube-scheduler@v1.31.14"
+          },
+          "Version": "v1.31.14"
+        },
+        {
+          "ID": "k8s.io/kubelet@v1.31.13",
+          "Name": "k8s.io/kubelet",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fkubelet@v1.31.13",
+            "UID": "c51f441e7f748ea5",
+            "BOMRef": "pkg:k8s/k8s.io%2Fkubelet@v1.31.13"
+          },
+          "Version": "v1.31.13"
+        },
+        {
+          "ID": "k8s.io/kubernetes@v1.31.14",
+          "Name": "k8s.io/kubernetes",
+          "Identifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14",
+            "UID": "ec5aaa055a5b395a",
+            "BOMRef": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14"
+          },
+          "Version": "v1.31.14",
+          "DependsOn": [
+            "kube-dns",
+            "kube-dns",
+            "cert-manager@v1.19.1",
+            "cilium-agent@v1.18.4",
+            "cilium-envoy@v1.34.10-1762597008-ff7ae7d623be00078865cff1b0672cc5d9bfc6d5",
+            "cluster-api-operator@v0.20.0",
+            "controller@v0.15.2",
+            "go.etcd.io/etcd/v3@v3.5.15-0",
+            "k8s.io/apiserver@v1.31.14",
+            "k8s.io/controller-manager@v1.31.14",
+            "k8s.io/ingress-nginx@v1.8.1",
+            "k8s.io/kube-proxy@v1.31.14",
+            "k8s.io/kube-scheduler@v1.31.14",
+            "opentelemetry-collector",
+            "speaker@v0.15.2",
+            "vault",
+            "vault-agent-injector"
+          ]
+        },
+        {
+          "ID": "kube-dns",
+          "Name": "kube-dns",
+          "Identifier": {
+            "PURL": "pkg:k8s/kube-dns",
+            "UID": "24397fe3af548ba1",
+            "BOMRef": "75b14c01-06a7-43d7-b937-568c29f8c628"
+          }
+        },
+        {
+          "ID": "kube-dns",
+          "Name": "kube-dns",
+          "Identifier": {
+            "PURL": "pkg:k8s/kube-dns",
+            "UID": "70e587fa52f30e4a",
+            "BOMRef": "c779a050-2f7d-4468-8c5f-d036710a1126"
+          }
+        },
+        {
+          "ID": "opentelemetry-collector",
+          "Name": "opentelemetry-collector",
+          "Identifier": {
+            "PURL": "pkg:k8s/opentelemetry-collector",
+            "UID": "338d1a6b4bc9516c",
+            "BOMRef": "pkg:k8s/opentelemetry-collector"
+          }
+        },
+        {
+          "ID": "speaker@v0.15.2",
+          "Name": "speaker",
+          "Identifier": {
+            "PURL": "pkg:k8s/speaker@v0.15.2",
+            "UID": "11ca2971711bb889",
+            "BOMRef": "pkg:k8s/speaker@v0.15.2"
+          },
+          "Version": "v0.15.2"
+        },
+        {
+          "ID": "vault",
+          "Name": "vault",
+          "Identifier": {
+            "PURL": "pkg:k8s/vault",
+            "UID": "8d170f6befef4c90",
+            "BOMRef": "pkg:k8s/vault"
+          }
+        },
+        {
+          "ID": "vault-agent-injector",
+          "Name": "vault-agent-injector",
+          "Identifier": {
+            "PURL": "pkg:k8s/vault-agent-injector",
+            "UID": "51ad9cf53d5b2e54",
+            "BOMRef": "pkg:k8s/vault-agent-injector"
+          }
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-7598",
+          "PkgID": "k8s.io/apiserver@v1.31.14",
+          "PkgName": "k8s.io/apiserver",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14",
+            "UID": "c769adce0cd7a4ad",
+            "BOMRef": "pkg:k8s/k8s.io%2Fapiserver@v1.31.14"
+          },
+          "InstalledVersion": "v1.31.14",
+          "Status": "affected",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-7598",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:e86871434039774cb10b2a08fa9a81e45c32cf390b7a5a982a057a5bfa3f95fa",
+          "Title": "kube-apiserver: Network restriction bypass via race condition during namespace termination",
+          "Description": "A security issue was discovered in Kubernetes where a malicious or compromised pod could bypass network restrictions enforced by network policies during namespace deletion. The order in which objects are deleted during namespace termination is not defined, and it is possible for network policies to be deleted before the pods that they protect. This can lead to a brief period in which the pods are running, but network policies that should apply to connections to and from the pods are not enforced.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-362"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "k8s": 1,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/03/20/2",
+            "https://access.redhat.com/security/cve/CVE-2024-7598",
+            "https://github.com/kubernetes/kubernetes",
+            "https://github.com/kubernetes/kubernetes/issues/126587",
+            "https://groups.google.com/g/kubernetes-security-announce/c/67D7UFqiPRc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-7598",
+            "https://www.cve.org/CVERecord?id=CVE-2024-7598",
+            "https://www.cve.org/cverecord?id=CVE-2024-7598"
+          ],
+          "PublishedDate": "2025-03-20T17:15:37.707Z",
+          "LastModifiedDate": "2025-03-20T21:15:22.6Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-1974",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.5, 1.12.1",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-1974",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:7e68aa98d9e61d1e377061fe922e12f51bede03ebc2395387ebe992e0e7766f6",
+          "Title": "ingress-nginx: ingress-nginx admission controller RCE escalation",
+          "Description": "A security issue was discovered in Kubernetes where under certain conditions, an unauthenticated attacker with access to the pod network can achieve arbitrary code execution in the context of the ingress-nginx controller. This can lead to disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-653"
+          ],
+          "VendorSeverity": {
+            "bitnami": 4,
+            "ghsa": 4,
+            "k8s": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-1974",
+            "https://github.com/B1ack4sh/Blackash-CVE-2025-1974",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.11.5",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.12.1",
+            "https://github.com/kubernetes/kubernetes/issues/131009",
+            "https://groups.google.com/g/kubernetes-security-announce/c/2qa9DFtN0cQ",
+            "https://https://github.com/kubernetes/kubernetes/issues/131009",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-1974",
+            "https://security.netapp.com/advisory/ntap-20250328-0008",
+            "https://security.netapp.com/advisory/ntap-20250328-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2025-1974",
+            "https://www.cve.org/cverecord?id=CVE-2025-1974"
+          ],
+          "PublishedDate": "2025-03-25T00:15:14.753Z",
+          "LastModifiedDate": "2025-11-10T18:16:06.267Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-25742",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "Status": "affected",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-25742",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:8571b1e84eaad602fb85d71afa42e7cc722748f449c94efe52a388ae13cd9489",
+          "Title": "k8s.io/ingress-nginx: Custom snippets allows retrieval of ingress-nginx serviceaccount token and secrets across all namespaces",
+          "Description": "A security issue was discovered in ingress-nginx where a user that can create or update ingress objects can use the custom snippets feature to obtain all secrets in the cluster.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "k8s": 3,
+            "nvd": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+              "V3Score": 7.1
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+              "V2Score": 5.5,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-25742",
+            "https://github.com/kubernetes/ingress-nginx/issues/7837",
+            "https://github.com/kubernetes/kubernetes/issues/126811",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mT4JJxi9tQY",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-25742",
+            "https://security.netapp.com/advisory/ntap-20211203-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-25742",
+            "https://www.cve.org/cverecord?id=CVE-2021-25742"
+          ],
+          "PublishedDate": "2021-10-29T04:15:08.22Z",
+          "LastModifiedDate": "2024-11-21T05:55:19.853Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5043",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "Status": "affected",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5043",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:7fdb4f34f4cdf179de74c71c01bfd9eea15ca1fae271aa8d71ed98dbcb0546f4",
+          "Title": "Ingress nginx annotation injection causes arbitrary command execution",
+          "Description": "Ingress nginx annotation injection causes arbitrary command execution.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-74"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "k8s": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/25/4",
+            "https://github.com/kubernetes/ingress-nginx/issues/10571",
+            "https://github.com/kubernetes/kubernetes/issues/126816",
+            "https://groups.google.com/g/kubernetes-security-announce/c/pVsXsOpxYZo",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5043",
+            "https://security.netapp.com/advisory/ntap-20240307-0012",
+            "https://security.netapp.com/advisory/ntap-20240307-0012/",
+            "https://www.cve.org/cverecord?id=CVE-2023-5043"
+          ],
+          "PublishedDate": "2023-10-25T20:15:18.037Z",
+          "LastModifiedDate": "2025-02-13T18:15:54.603Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5044",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "Status": "affected",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5044",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:2860027411ac1436d8ed30b8cf6d84d22bc44ab7b71d51ff19299d3d26cdcac1",
+          "Title": "Ingress-nginx code injection via nginx.ingress.kubernetes.io/permanent-redirect annotation",
+          "Description": "Code injection via nginx.ingress.kubernetes.io/permanent-redirect annotation.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-94"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "k8s": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/25/3",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/issues/10572",
+            "https://github.com/kubernetes/kubernetes/issues/126817",
+            "https://groups.google.com/g/kubernetes-security-announce/c/ukuYYvRNel0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5044",
+            "https://security.netapp.com/advisory/ntap-20240307-0012",
+            "https://security.netapp.com/advisory/ntap-20240307-0012/",
+            "https://www.cve.org/cverecord?id=CVE-2023-5044"
+          ],
+          "PublishedDate": "2023-10-25T20:15:18.187Z",
+          "LastModifiedDate": "2025-02-13T18:15:54.743Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-7646",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.2",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-7646",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:9b599dd5d5cbd43e5b283a3015bb66695077980bfb77bf4bba6848e24fb7ee15",
+          "Title": "Ingress-nginx Annotation Validation Bypass",
+          "Description": "A security issue was discovered in ingress-nginx where an actor with permission to create Ingress objects (in the `networking.k8s.io` or `extensions` API group) can bypass annotation validation to inject arbitrary commands and obtain the credentials of the ingress-nginx controller. In the default configuration, that credential has access to all secrets in the cluster.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "k8s": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/08/16/5",
+            "https://github.com/kubernetes/ingress-nginx/pull/11719",
+            "https://github.com/kubernetes/ingress-nginx/pull/11721",
+            "https://github.com/kubernetes/kubernetes/issues/126744",
+            "https://groups.google.com/g/kubernetes-security-announce/c/a1__cKjWkfA",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-7646",
+            "https://www.cve.org/cverecord?id=CVE-2024-7646"
+          ],
+          "PublishedDate": "2024-08-16T18:15:10.97Z",
+          "LastModifiedDate": "2024-11-21T09:51:52.213Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-1097",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.5, 1.12.1",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-1097",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:7268297bad6cad71244d0a6c99d7c73926fad3a49db0abb2f8a7f5ca5f42e422",
+          "Title": "ingress-nginx: ingress-nginx controller - configuration injection via unsanitized auth-tls-match-cn annotation",
+          "Description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `auth-tls-match-cn` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "k8s": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-1097",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.11.5",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.12.1",
+            "https://github.com/kubernetes/kubernetes/issues/131007",
+            "https://groups.google.com/g/kubernetes-security-announce/c/2qa9DFtN0cQ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-1097",
+            "https://security.netapp.com/advisory/ntap-20250328-0008",
+            "https://security.netapp.com/advisory/ntap-20250328-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2025-1097",
+            "https://www.cve.org/cverecord?id=CVE-2025-1097"
+          ],
+          "PublishedDate": "2025-03-25T00:15:13.59Z",
+          "LastModifiedDate": "2025-11-03T21:18:52.093Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-1098",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.5, 1.12.1",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-1098",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:14cc9dfbb1cb199389fca784f09edf8f2cac8f7bb78f8966b174f45e7088c3d6",
+          "Title": "ingress-nginx: ingress-nginx controller - configuration injection via unsanitized mirror annotations",
+          "Description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `mirror-target` and `mirror-host` Ingress annotations can be used to inject arbitrary configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "k8s": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-1098",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.11.5",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.12.1",
+            "https://github.com/kubernetes/kubernetes/issues/131008",
+            "https://groups.google.com/g/kubernetes-security-announce/c/2qa9DFtN0cQ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-1098",
+            "https://security.netapp.com/advisory/ntap-20250328-0008",
+            "https://security.netapp.com/advisory/ntap-20250328-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2025-1098",
+            "https://www.cve.org/cverecord?id=CVE-2025-1098"
+          ],
+          "PublishedDate": "2025-03-25T00:15:14.613Z",
+          "LastModifiedDate": "2025-11-03T21:18:52.23Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-24514",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.5, 1.12.1",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-24514",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:bed34633a80810b8c8134073cb7912d783abd068b950d080fb7c9b1e868e8aa2",
+          "Title": "ingress-nginx: ingress-nginx controller - configuration injection via unsanitized auth-url annotation",
+          "Description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `auth-url` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "k8s": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-24514",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.11.5",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.12.1",
+            "https://github.com/kubernetes/kubernetes/issues/131006",
+            "https://groups.google.com/g/kubernetes-security-announce/c/2qa9DFtN0cQ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-24514",
+            "https://security.netapp.com/advisory/ntap-20250328-0008",
+            "https://security.netapp.com/advisory/ntap-20250328-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2025-24514",
+            "https://www.cve.org/cverecord?id=CVE-2025-24514"
+          ],
+          "PublishedDate": "2025-03-25T00:15:15.047Z",
+          "LastModifiedDate": "2025-11-03T22:18:40.65Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-24513",
+          "PkgID": "k8s.io/ingress-nginx@v1.8.1",
+          "PkgName": "k8s.io/ingress-nginx",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1",
+            "UID": "9447d95ce46e00a4",
+            "BOMRef": "pkg:k8s/k8s.io%2Fingress-nginx@v1.8.1"
+          },
+          "InstalledVersion": "v1.8.1",
+          "FixedVersion": "1.11.5, 1.12.1",
+          "Status": "fixed",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-24513",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:9a9302087d11d3039d4381e2d4097164e88a3179f0e13a1cf5c94ca87184e6b9",
+          "Title": "ingress-nginx: ingress-nginx controller - auth secret file path traversal vulnerability",
+          "Description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where attacker-provided data are included in a filename by the ingress-nginx Admission Controller feature, resulting in directory traversal within the container. This could result in denial of service, or when combined with other vulnerabilities, limited disclosure of Secret objects from the cluster.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "bitnami": 2,
+            "ghsa": 2,
+            "k8s": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 4.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 4.8
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 4.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-24513",
+            "https://github.com/kubernetes/ingress-nginx",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.11.5",
+            "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.12.1",
+            "https://github.com/kubernetes/kubernetes/issues/131005",
+            "https://groups.google.com/g/kubernetes-security-announce/c/2qa9DFtN0cQ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-24513",
+            "https://security.netapp.com/advisory/ntap-20250328-0008",
+            "https://security.netapp.com/advisory/ntap-20250328-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2025-24513",
+            "https://www.cve.org/cverecord?id=CVE-2025-24513"
+          ],
+          "PublishedDate": "2025-03-25T00:15:14.9Z",
+          "LastModifiedDate": "2025-11-03T22:18:40.553Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-1767",
+          "PkgID": "k8s.io/kubernetes@v1.31.14",
+          "PkgName": "k8s.io/kubernetes",
+          "PkgIdentifier": {
+            "PURL": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14",
+            "UID": "ec5aaa055a5b395a",
+            "BOMRef": "pkg:k8s/k8s.io%2Fkubernetes@v1.31.14"
+          },
+          "InstalledVersion": "v1.31.14",
+          "Status": "affected",
+          "SeveritySource": "k8s",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-1767",
+          "DataSource": {
+            "ID": "k8s",
+            "Name": "Official Kubernetes CVE Feed",
+            "URL": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+          },
+          "Fingerprint": "sha256:5311fe66b27452c590eb379987ee031d8ccc01702d3ccbb78dce5ef484ef3438",
+          "Title": "kubelet: GitRepo Volume Inadvertent Local Repository Access",
+          "Description": "This CVE only affects Kubernetes clusters that utilize the in-tree gitRepo volume to clone git repositories from other pods within the same node. Since the in-tree gitRepo volume feature has been deprecated and will not receive security updates upstream, any cluster still using this feature remains vulnerable.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "k8s": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.5
+            },
+            "k8s": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/03/13/9",
+            "https://access.redhat.com/security/cve/CVE-2025-1767",
+            "https://github.com/kubernetes/kubernetes",
+            "https://github.com/kubernetes/kubernetes/issues/130786",
+            "https://github.com/kubernetes/kubernetes/pull/130786",
+            "https://groups.google.com/g/kubernetes-security-announce/c/19irihsKg7s",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-1767",
+            "https://www.cve.org/CVERecord?id=CVE-2025-1767",
+            "https://www.cve.org/cverecord?id=CVE-2025-1767"
+          ],
+          "PublishedDate": "2025-03-13T17:15:36.437Z",
+          "LastModifiedDate": "2025-03-13T21:15:43.127Z"
+        }
+      ]
+    }
+  ]
+}
