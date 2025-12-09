@@ -52,7 +52,7 @@ echo ""
 echo "$SUB_SEPARATOR"
 echo ">>> Installing Kyverno CLI"
 echo "$SUB_SEPARATOR"
-wget -q --show-progress https://github.com/kyverno/kyverno/releases/download/v1.10.0/kyverno-cli_v1.10.0_linux_x86_64.tar.gz -O /tmp/kyverno.tar.gz
+wget -q --show-progress https://github.com/kyverno/kyverno/releases/download/v1.16.0/kyverno-cli_v1.16.0_linux_x86_64.tar.gz -O /tmp/kyverno.tar.gz
 tar -xzf /tmp/kyverno.tar.gz -C /tmp/
 sudo mv /tmp/kyverno /usr/local/bin/
 rm /tmp/kyverno.tar.gz
